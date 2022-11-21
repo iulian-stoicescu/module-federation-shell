@@ -14,5 +14,20 @@
         "@typescript-eslint"
     ],
     "rules": {
+      "object-curly-spacing": "off",
+      "comma-dangle": ["error", "never"],
+      "linebreak-style": ["error", "windows"],
+      "new-cap": ["off", { "properties": false }],
+      "max-len": ["warn", { "code": 140 }],
+      "indent": "off",
+      "require-jsdoc": ["error", {
+        "require": {
+          "FunctionDeclaration": false,
+          "MethodDefinition": false,
+          "ClassDeclaration": false,
+          "ArrowFunctionExpression": false,
+          "FunctionExpression": false
+        }
+      }]
     }
 }

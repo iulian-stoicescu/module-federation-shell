@@ -11,12 +11,12 @@ export class AppComponent {
   title = 'module-federation-shell';
 
   constructor(private router: Router) {
-
     // listen for window events dispatched from the test-mfe (sometimes it works with CustomEventInit, other times with CustomEvent)
-    window.addEventListener('pathSelectedFromTestMfe', (customEvent: CustomEventInit) => {
-      this.router.navigate(['../', customEvent.detail.path]);
-    });
-
+    window.addEventListener(
+      'pathSelectedFromTestMfe',
+      (customEvent: CustomEventInit) => {
+        this.router.navigate(['../', customEvent.detail.path]);
+      }
+    );
   }
 }
-// simple comment to commit this file
