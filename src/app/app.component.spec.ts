@@ -33,3 +33,4 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('.content span')?.textContent).toContain('module-federation-shell app is running!');
   });
 });
+// simple comment to commit this file
