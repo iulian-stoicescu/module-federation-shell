@@ -1,4 +1,7 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+/*
+ * Copyright '2022' Iulian Stoicescu or its subsidiaries. All Rights Reserved.
+ */
+import { Component, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,16 +10,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class HomeComponent implements OnInit {
-
-  constructor(private router: Router) {
-  }
-
-  ngOnInit(): void {
-  }
+export class HomeComponent {
+  constructor(private router: Router) {}
 
   navigateToMfe() {
     this.router.navigate(['mfe']);
   }
-
 }

@@ -1,3 +1,6 @@
+/*
+ * Copyright '2022' Iulian Stoicescu or its subsidiaries. All Rights Reserved.
+ */
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomeComponent } from './home.component';
@@ -8,9 +11,8 @@ describe('HomeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomeComponent ]
-    })
-    .compileComponents();
+      declarations: [HomeComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {
